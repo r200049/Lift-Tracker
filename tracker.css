@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, Helvetica,  sans-serif;  
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  label, input, select {
+    display: block;
+    margin-bottom: 10px;  
+  }
+  
+  button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #eb1000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e6e41;
+  }
+  
+  #filter-btn {
+    display: block;
+    margin: 10px auto;
+  }
+  
+  #chart {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  table {
+    width: 500px;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #e8e8e8;
+  }
