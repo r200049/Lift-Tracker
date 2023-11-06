@@ -1,0 +1,75 @@
+<<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="landing.css">
+		<script src="landing.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+
+		<title>Weight Tracker</title>
+	</head>
+	<body>
+		<div class="heading">
+			<h2>Weight Tracker v1.1</h2>
+		</div>
+		<hr />
+		<br />
+		<div class="content">
+			<div class="table-content">
+				<h3 class="heading">Leaderboard</h3>
+				<select id="sort-dropdown">
+					<option value="" selected disabled>Sort By</option>
+					<option value="Reps">Reps</option>
+					<option value="Weight">Weight</option>
+					<option value="Combined">Combined</option>
+				</select>
+				<br />
+				<br />
+				<table id="leaderboard">
+				  <!--<thead>
+					<tr>
+						<th>Name</th>
+						<th>Lift</th>
+						<th>Weight</th>
+					</tr>
+				  </thead>
+				  <tr>
+					<td>Matt</td>
+					<td>Bench</td>
+					<td>00</td>
+				  </tr>
+				  <tr>
+					<td>Tone</td>
+					<td>Squat</td>
+					<td>00</td>
+				  </tr>
+				  <tr>
+					<td>Rich</td>
+					<td>Deadlift</td>
+					<td>00</td>
+				  </tr>-->
+				</table>
+				<br />
+				<div>
+					<input id="login-field" style="width: 100px;"></input>
+					<button id="login-button">Login</button>
+				</div>
+
+		   </div>
+		   <br />
+		   <div class="table-content">
+		   		<h3 class="heading">Chart</h3>
+		   		<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+		   </div>
+		   <br />
+		   <br />
+		   <div class="link-content">
+				<a href="C:/my_project/tracker/tracker/tracker.html">Enter Progress</a>
+		   </div>
+		</div>
+	</body>
+</html>
+
+
+
