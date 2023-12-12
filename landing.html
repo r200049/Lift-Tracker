@@ -1,75 +1,57 @@
-<<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="landing.css">
-		<script src="landing.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
-
-		<title>Weight Tracker</title>
-	</head>
-	<body>
-		<div class="heading">
-			<h2>Weight Tracker v1.1</h2>
-		</div>
-		<hr />
-		<br />
-		<div class="content">
-			<div class="table-content">
-				<h3 class="heading">Leaderboard</h3>
-				<select id="sort-dropdown">
-					<option value="" selected disabled>Sort By</option>
-					<option value="Reps">Reps</option>
-					<option value="Weight">Weight</option>
-					<option value="Combined">Combined</option>
-				</select>
-				<br />
-				<br />
-				<table id="leaderboard">
-				  <!--<thead>
-					<tr>
-						<th>Name</th>
-						<th>Lift</th>
-						<th>Weight</th>
-					</tr>
-				  </thead>
-				  <tr>
-					<td>Matt</td>
-					<td>Bench</td>
-					<td>00</td>
-				  </tr>
-				  <tr>
-					<td>Tone</td>
-					<td>Squat</td>
-					<td>00</td>
-				  </tr>
-				  <tr>
-					<td>Rich</td>
-					<td>Deadlift</td>
-					<td>00</td>
-				  </tr>-->
-				</table>
-				<br />
-				<div>
-					<input id="login-field" style="width: 100px;"></input>
-					<button id="login-button">Login</button>
-				</div>
-
-		   </div>
-		   <br />
-		   <div class="table-content">
-		   		<h3 class="heading">Chart</h3>
-		   		<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
-		   </div>
-		   <br />
-		   <br />
-		   <div class="link-content">
-				<a href="C:/my_project/tracker/tracker/tracker.html">Enter Progress</a>
-		   </div>
-		</div>
-	</body>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="landing.css">
+        <script src="landing.js"></script>
+        <title>Lift Tracker</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <!-- Chart.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    </head>
+    <body>
+        <p class="heading">Lift Tracker</p>
+        <div class="content">
+            <div class="center-align">
+                <p class="heading-secondary">Leaderboard</p>
+                <div class="table-caption">
+                    <form action="http://localhost:5500/tracker/tracker/tracker.html">
+                        <button type="submit">+</button>
+                    </form>
+                    <select id="sort-dropdown">
+                        <option value="" selected disabled>Sort By</option>
+                        <option value="Name">Name</option>
+                        
+                        <option value="Lift">Lift</option>
+                        <option value="Weight">Weight</option>
+                        <option value="Kilograms">Kilograms</option>
+                        <option value="Reps">Reps</option>
+						<option value="Combined">Combined</option>
+                    </select>
+                    <button onclick="location.href='https://lift-tracker.auth.us-east-2.amazoncognito.com/logout?client_id=5tsercpn804muj8q9b291b7auh&logout_uri=http://localhost:5500/login/login.html'">Logout</button>
+                </div>
+                <table id="leaderboard"></table>
+                <br />
+                <div class="center-align">
+                    <p class="heading-secondary">Chart</p>
+                    <div class="generate-chart-form">
+                        <input id="login-field"></input>
+                        <button id="login-button">Generate Chart</button>
+                    </div>
+                    <br />
+                    <canvas id="lift-chart"></canvas>
+                </div>
+            </div>
+           <!--
+           <br />
+           <div class="hwrap"><div id="news-ticker" class="hmove">
+           </div>
+           -->
+        </div>
+        <br />
+    </body>
 </html>
-
-
-
